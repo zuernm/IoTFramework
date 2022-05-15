@@ -18,6 +18,7 @@ const DemoProject: FC = () => {
   return (
     <>
       <RouterTabs value={routerTab}>
+        <Tab value="status" label="Status" />
         <Tab value="information" label="Information" />
         <Tab value="rest" label="REST Example" />
         <Tab value="socket" label="WebSocket Example" />

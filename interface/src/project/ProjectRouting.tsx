@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Navigate, Routes, Route } from 'react-router-dom';
 
-import DemoProject from './DemoProject';
+import Dashboard from './Dashboard';
 
 const ProjectRouting: FC = () => {
   return (
@@ -9,11 +9,17 @@ const ProjectRouting: FC = () => {
       {
         // Add the default route for your project below
       }
-      <Route path="/*" element={<Navigate to="demo/information" />} />
+      <Route path="/*" element={<Navigate to="dashboard" />} />
+      {
+        // <Route path="/*" element={<Navigate to="demo/information" />} />
+      }
       {
         // Add your project page routes below.
       }
-      <Route path="demo/*" element={<DemoProject />} />
+      <Route path="dashboard/*" element={<Dashboard/>} />
+      {
+        // <Route path="demo/*" element={<DemoProject />} />
+      }
     </Routes>
   );
 };

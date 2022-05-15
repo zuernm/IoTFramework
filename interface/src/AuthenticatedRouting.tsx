@@ -39,9 +39,9 @@ const AuthenticatedRouting: FC = () => {
     <Layout>
       <Routes>
         {features.project && (
-          <Route path={`/${PROJECT_PATH}/*`} element={<ProjectRouting />} />
-        )}
-        <Route path="/wifi/*" element={<WiFiConnection />} />
+          <Route path={`/${PROJECT_PATH}/*`} element={<ProjectRouting />} />          
+        )}                
+        <Route path="/wifi/*" element={<WiFiConnection />} />                
         <Route path="/ap/*" element={<AccessPoint />} />
         {features.ntp && (
           <Route path="/ntp/*" element={<NetworkTime />} />
